@@ -54,6 +54,7 @@ network={
         password="password"
         phase2="auth=PAP"
 }
+
 freeradius -X
 tshark -V -ni lo udp port 1812
 eapol_test -c eapol_test.conf -a 127.0.0.1 -p 1812 -s testing123
@@ -110,12 +111,12 @@ Auth-Type oauth2 {
         oauth2
 }
 # post-auth section add oauth2 after ldap
+
 freeradius -X
-
 radtest filip@lebieckigmail.onmicrosoft.com 3ag683Ig 127.0.0.1 0 testing123
-
 cp eapol_test.conf eapol_test2.conf
 
+vi eapol_test2.conf
 network={
         key_mgmt=WPA-EAP
         eap=TTLS
