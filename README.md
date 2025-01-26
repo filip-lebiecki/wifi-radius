@@ -113,7 +113,7 @@ Auth-Type oauth2 {
 # post-auth section add oauth2 after ldap
 
 freeradius -X
-radtest filip@lebieckigmail.onmicrosoft.com 3ag683Ig 127.0.0.1 0 testing123
+radtest filip@XXX.onmicrosoft.com 3ag683Ig 127.0.0.1 0 testing123
 cp eapol_test.conf eapol_test2.conf
 
 vi eapol_test2.conf
