@@ -126,4 +126,6 @@ network={
 }
 
 eapol_test -c eapol_test2.conf -a 127.0.0.1 -p 1812 -s testing123
+
+vi /opt/freeradius-oauth2-perl/module
 ```
